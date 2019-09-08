@@ -3,6 +3,7 @@
 function WebApp() {
     let a = 1;
     const navBarToggles = document.querySelectorAll(".navButton");
+    const customURLLinks = document.querySelectorAll("[data-url-link]");
     const navMenu = document.querySelector(".navMenu");
     const navMenuUnderlay = document.querySelector(".navMenuUnderlay");
     const snackbar = document.getElementById("appSnackbar");
@@ -18,6 +19,9 @@ function WebApp() {
     const fetchBtn = document.getElementById("fetchBtn");
     //end elements for demo use;
 
+    const loadUrl = (url) => {
+        window.location = (url);
+    }
 
     const showProgressBar = () => {
         if (!progressBar.classList.contains("show")) {
@@ -107,6 +111,14 @@ function WebApp() {
         navBarToggles.forEach((listener) => {
             listener.addEventListener("click", toggleNavMenu);
         });
+        customURLLinks.forEach((listener) => {
+            listener.addEventListener("click", (e)=>{
+                showProgressBar();
+                toggleNavMenu();
+               loadUrl(e.currentTarget.getAttribute("data-url-link"));
+            });
+        });
+
         navMenuUnderlay.addEventListener("click", toggleNavMenu);
         fabBtn.addEventListener("click", ()=>{
             showAlertBox("You clicked FAB");
