@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App Title</title>
+    <meta name="description" content="Basic HTML5 PWA App Shell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="appBar">
+            <div class="leading">
+                <button class="hamburgerButton navButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="title">
+                My App
+            </div>
+            <div class="trailing">
+                <button class="ellipsisButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="navMenuUnderlay">
+
+        </div>
+        <div class="navMenu">
+            <nav>
+                <ul>
+                    <li class="navHeader">
+                        <div class="userAvatar"></div>
+                        <span class="userName">
+                            User Name
+                        </span>
+                        <span class="userEmail">
+                            user@email.com
+                        </span>
+                    </li>
+                    <li id="snackBtn">
+                        <span class="leading"><img src="assets/img/comment-alt.svg"></span> Snackbar
+                    </li>
+                    <li id="alertBtn">
+                        <span class="leading"><img src="assets/img/exclamation-circle.svg"></span> Alert
+                    </li>
+                    <li id="fetchBtn">
+                        <span class="leading"><img src="assets/img/cloud-download-alt.svg"></span> Fetch
+                    </li>
+                    <li>
+                        <span class="leading"><img src="assets/img/github.svg"></span> Repository
+                    </li>
+                    <li class="divider"></li>
+
+                    <li>
+                        Logout <span class="trailing warning"><img src="assets/img/sign-out-alt.svg"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main id="contentScreen">
+        <br>
+        <center>Hello World :)</center>
+    </main>
+    <div id="appFAB"><span>?</span></div>
+    <div id="appSnackbar"></div>
+    <div id="appDialog">
+        <div class="messageBox">
+            <div class="header">Message <span class="closeBtn">x</span></div>
+            <div class="message" id="appDialogMsg">Hello World!</div>
+            <div class="footer"><button class="closeBtn">Close</button></div>
+        </div>
+    </div>
+    <div id="appProgressbar">
+        <div><span class="loader-bar"><span></div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
