@@ -4,7 +4,7 @@
   "description": "Basic HTML5 PWA App Shell inspired by Material",
   "main": "assets/js/app.js",
   "scripts": {
-    "test": "eslint assets/js/app.js",
+    "test": "lessc assets/css/app.less assets/css/app.css && eslint assets/js/app.js",
     "dev": "lessc assets/css/app.less assets/css/app.css && lite-server"
   },
   "repository": {
