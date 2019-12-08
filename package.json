@@ -1,0 +1,43 @@
+{
+  "name": "material-like-pwa-appshell",
+  "version": "1.0.0",
+  "description": "Basic HTML5 PWA App Shell inspired by Material",
+  "main": "assets/js/app.js",
+  "scripts": {
+    "test": "eslint assets/js/app.js",
+    "dev": "lessc --clean-css assets/css/app.less assets/css/app.css && lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadchif/material-like-pwa-appshell.git"
+  },
+  "keywords": [
+    "material",
+    "html",
+    "html5",
+    "css",
+    "template",
+    "app-shell",
+    "pwa",
+    "javascript",
+    "js"
+  ],
+  "author": "Chif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nadchif/material-like-pwa-appshell/issues"
+  },
+  "homepage": "https://github.com/nadchif/material-like-pwa-appshell#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "less": "^3.10.3",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
